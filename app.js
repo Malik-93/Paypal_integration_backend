@@ -104,6 +104,6 @@ app.get("cancel", (req, res) => {
     res.render("cancel");
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log("Server is running on port 4050");
 });
